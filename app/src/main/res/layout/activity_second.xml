@@ -15,4 +15,15 @@
         android:textSize="17sp"
         />
 
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAMA"
+        android:layout_below="@+id/tv_selamat_datang"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+
+
 </RelativeLayout>
