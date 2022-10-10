@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity
             {
                 String nama = etNama.getText().toString();
 
-                if(nama.trim().equals(""))
+                if(nama.equals(""))
                 {
                     etNama.setError("Nama Harus Diisi!");
                 }
