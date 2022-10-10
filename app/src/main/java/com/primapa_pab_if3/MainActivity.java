@@ -29,8 +29,21 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Intent pindahlayout = new Intent(MainActivity.this, SecondActivity.class);
-                startActivity(pindahlayout);
+                String nama = etNama.getText().toString();
+
+                if(nama.trim().equals(""))
+                {
+                    etNama.setError("Nama Harus Diisi!");
+                }
+
+                else
+                {
+                    Intent pindahlayout = new Intent(MainActivity.this, SecondActivity.class);
+                    pindahlayout.putExtra("xNama", nama);
+                    startActivity(pindahlayout);
+                }
+
+
 
             }
 
